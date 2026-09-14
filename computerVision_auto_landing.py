@@ -27,7 +27,7 @@ UAVID_PALETTE = np.array([
 
 processor = SegformerImageProcessor.from_pretrained("nvidia/mit-b0")
 model = SegformerForSemanticSegmentation.from_pretrained("nvidia/mit-b0", num_labels=8)
-model.load_state_dict(torch.load(r"C:\Users\Zainab.Alawneh\Desktop\Traversability Estimation_seg_former\fine-tuned-model\segformer_uavid_epoch_106_13-7.pt", map_location=device))
+model.load_state_dict(torch.load(r"assets\segformer_uavid_epoch_106_13-7.pt", map_location=device))
 model.to(device).eval()
 
 client = airsim.MultirotorClient()
