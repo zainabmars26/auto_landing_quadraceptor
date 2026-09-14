@@ -11,7 +11,7 @@ The drone will starts flying untel you press Q button, the drone will starts loo
 ```bash
 python -m venv AirSim_env
 ```
-2) install requiremnt 
+2) install requiremnt ,,
 ```bash
 pip install -r requirements.txt
 ```
