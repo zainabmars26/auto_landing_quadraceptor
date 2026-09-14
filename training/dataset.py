@@ -77,7 +77,7 @@ processor = SegformerImageProcessor.from_pretrained("nvidia/mit-b0")
 
 # Create your training dataset instance
 # (Replace 'uavid_dataset/train' with the actual path on your computer)
-train_dataset = UAVidDataset(root_dir="uavid_dataset/train", image_processor=processor)
+train_dataset = UAVidDataset(root_dir="training data/train", image_processor=processor)
 
 # Load a single sample batch
 train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)

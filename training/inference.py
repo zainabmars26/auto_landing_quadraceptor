@@ -27,7 +27,7 @@ processor = SegformerImageProcessor.from_pretrained("nvidia/mit-b0")
 model = SegformerForSemanticSegmentation.from_pretrained(
     "nvidia/mit-b0", num_labels=8, id2label=id2label, label2id=label2id, ignore_mismatched_sizes=True
 )
-model.load_state_dict(torch.load(r"segformer_uavid_epoch_77-9-7.pt", map_location=device)) #add pretrained model 
+model.load_state_dict(torch.load(r"segformer_uavid_epoch_77-9-7.pt", map_location=device)) #add resulting mode
 model.to(device)
 model.eval()
 

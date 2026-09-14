@@ -12,8 +12,8 @@ print(f"Using device: {device}")
 processor = SegformerImageProcessor.from_pretrained("nvidia/mit-b0")
 
 # Adjust paths to match your local setup
-train_dataset = UAVidDataset(root_dir="augmented_dataset/train", image_processor=processor)
-val_dataset = UAVidDataset(root_dir="augmented_dataset/val", image_processor=processor)
+train_dataset = UAVidDataset(root_dir="training data/train", image_processor=processor)
+val_dataset = UAVidDataset(root_dir="training data/val", image_processor=processor)
 
 train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True) # Increased batch size for training
 val_loader = DataLoader(val_dataset, batch_size=8, shuffle=False)
