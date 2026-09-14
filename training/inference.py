@@ -33,7 +33,7 @@ model.eval()
 
 # 4. Load a test image from your validation set
 # (Change this path to point to a real image file in your val folder)
-test_image_path = r"C:\Users\Zainab.Alawneh\Desktop\tasks\AirSim\dataset\New folder\manual_snap_1783425546.png"
+test_image_path = r"training\test image\test.png"
 raw_image = Image.open(test_image_path).convert("RGB")
 original_size = raw_image.size  # Keep track of original dimensions (Width, Height)
 
