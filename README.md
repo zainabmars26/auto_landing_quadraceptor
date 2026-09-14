@@ -15,3 +15,5 @@ python -m venv AirSim_env
 ```bash
 pip install -r requirements.txt
 ```
+
+## for training 
